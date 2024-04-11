@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+:root{
+  /* Primary */
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  /* Neutral */
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+  /* Font Family  */
+  --ff-main: 'Bai Jamjuree', system-ui, monospace; 
+  /* Font Weights  */
+  --fw-400: 400;
+  --fw-600: 600;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-family: var(--ff-main);
+  display: flex;
+  justify-content: center;
+  min-height: 3808px;
+  border-bottom:180px solid #f5f5f5 ;
+}
+main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 8rem;
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat:no-repeat;
+  background-position: top center;
+  background-size: contain;
+  background-color: white;
+  z-index: 2;
+}
+.Upper-part-Control{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8rem;
+}
+.Upper-Most-Section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  width: 100%;
+  max-width: 700px;
+  height: fit-content;
+  h1{
+    margin-top: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    font-size:2.8rem;
+    font-weight: 500;
+  }
+  p{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: var(--GrayishBlue);
+    font-weight: 300;
+    line-height: 1.75rem;
+  }
+  button{
+    font-size: 1.175rem;
+    color: white;
+    background-color: var(--StrongCyan);
+    font-family: var(--ff-main);
+    border: none;
+    border-radius: 4rem;
+    padding: .85rem 2.25rem; 
+    margin-top: 1.25rem;
+    border-bottom: 3px solid hsl(171, 65%, 37%);
+    box-shadow: 0 12px 20px rgba(45, 203, 179, 0.25);
+  }
+  button:last-child{
+    background-color: var(--LightBlue);
+    margin-left: .75rem;
+  }
+}
+.Keep-track-of-your-snippets-Section{
+  width: 100%;
+  max-width: 700px;
+  height: fit-content;
+  h2{
+    margin-top: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    font-size:2.25rem;
+    font-weight: 500;
+  }
+  p{
+    font-size: 1.175rem;
+    margin-top: 1.25rem;
+    color: var(--GrayishBlue);
+    font-weight: 200;
+    line-height: 1.85rem;
+  }
+}
+.Second-Section-Div{
+  display: flex;
+  align-items: center;
+  column-gap: 5rem;
+  img{
+    width: 100%;
+    max-width: 750px;
+    
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.85rem;
+    padding-bottom: 4rem;
+  }
+  div{
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
+  }
+  h3{
+    margin-top: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    font-size:1.5rem;
+    font-weight: 500;
+  }
+  p{
+    font-size: 1rem;
+    margin-top: .5rem;
+    color: var(--GrayishBlue);
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+}
+.Details{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 5rem;
+  row-gap: 4rem;
+
+}
+.Access-Section{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 4rem;
+  h2{
+    margin-top: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    font-size:2.25rem;
+    font-weight: 500;
+  }
+  p{
+    font-size: 1.175rem;
+    margin-top: 1.25rem;
+    color: var(--GrayishBlue);
+    font-weight: 300;
+    line-height: 1.85rem;
+    width: 100%;
+    max-width: 700px;
+    align-self:center ;
+  }
+  img{
+    margin-top: 6rem;
+  }
+}
+.Supercharge-your-workflow-Section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1rem;
+  h2{
+    margin-top: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    font-size:2.25rem;
+    font-weight: 500;
+  }
+  p{
+    font-size: 1.175rem;
+    margin-top: 1.25rem;
+    color: var(--GrayishBlue);
+    font-weight: 300;
+    line-height: 1.85rem;
+    width: 100%;
+    max-width: 700px;
+    align-self: center;
+  }
+}
+img{
+  width: 100%;
+  max-width: fit-content;
+}
+.Supercharge-your-workflow-Middle-Section{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  max-width: 1250px;
+  div{
+    width: 28%;
+  }
+  h3{
+    margin-top: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    font-size:1.45rem;
+    font-weight: 500;
+  }
+  p{
+    font-size: 1rem;
+  }
+}
+.Companies-Supercharge-your-workflow-Lower-Section{
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-top: 6rem;
+  column-gap: 6rem;
+  padding-bottom: 4rem;
+}
+.Lower-Most-Part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: .75rem;
+  padding-bottom: 175px;
+  h2{
+    margin-top: 1.5rem;
+    color: var(--DarkGrayishBlue);
+    font-size:2.25rem;
+    font-weight: 500;
+  }
+  p{
+    font-size: 1.175rem;
+    margin-top: 1.25rem;
+    color: var(--GrayishBlue);
+    font-weight: 300;
+    line-height: 1.85rem;
+    width: 100%;
+    max-width: 700px;
+  }      
+  button{
+    font-size: 1.175rem;
+    color: white;
+    background-color: var(--StrongCyan);
+    font-family: var(--ff-main);
+    border: none;
+    border-radius: 4rem;
+    padding: .85rem 2.25rem; 
+    margin-top: 2.75rem;
+    border-bottom: 3px solid hsl(171, 65%, 37%);
+    box-shadow: 0 12px 20px rgba(45, 203, 179, 0.25);
+  }
+  button:last-child{
+    background-color: var(--LightBlue);
+    margin-left: .75rem;
+  }
+}
+footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  column-gap: 1rem;
+  max-width: 1100px;
+  background-color: #f5f5f5;
+  height: 100%;
+  max-height: 150px;
+  padding-top: 1rem;
+  div{
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+    img{
+      max-width: 40px;
+      width: 100%;
+      cursor: pointer;
+  transition: all 300ms ease;
+    }
+  }
+}
+
+.Footer-Info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1.5rem;
+}
+ul{
+  display: flex;
+  align-items: center;
+}
+ul:first-child li:nth-child(2){
+  margin-left: 8.5rem;
+}
+li{
+  list-style: none;
+  white-space: nowrap;
+  margin-left: 5.5rem; 
+  font-size: 1.175rem;
+    color: var(--DarkGrayishBlue);
+    font-weight: 300;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+li:hover{
+  color: hsl(171, 66%, 44%);
+}
+.Left-Section-Footer{
+  img{
+    max-width: 55px;
+  }
+}
+picture:first-child:hover{
+  background-image:url(images/icon-facebook\ copy.svg);
+  background-repeat: no-repeat;
+  img{
+    opacity: 0;
+  }
+}
+picture:nth-child(2):hover{
+  background-image: url(images/icon-twitter\ copy.svg);
+  background-repeat: no-repeat;
+img{
+  opacity: 0;
+}
+}
+picture:last-child:hover{
+  background-image: url(images/icon-instagram\ copy.svg);
+  background-repeat: no-repeat;
+  img{
+    opacity: 0;
+  }
+}
+@media (max-width:1111px) {
+  main{
+    background-image: url(images/bg-header-mobile.png);
+    margin: 2rem;
+  }
+  .Second-Section-Div{
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+  .Companies-Supercharge-your-workflow-Lower-Section{
+    flex-direction: column;
+    row-gap: 4rem;
+    img{
+      width: 100%;
+    }
+  }
+  .Supercharge-your-workflow-Middle-Section{
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+  footer{
+    flex-direction:column ;
+    row-gap: 3rem;
+    max-height:100% ;
+    height: fit-content;
+    width: 100%;
+    max-width: 100%;
+    div{
+      flex-direction: column;
+      row-gap: 3rem;
+    }
+  }
+  ul{
+    flex-direction: column;
+    row-gap: .5rem;
+    margin-top: -1rem;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    flex: 1;
+  }
+  li{
+    margin: 0;
+    align-self:center ;
+  }
+  ul:first-child li:nth-child(2){
+  margin-left: 0rem;
+}
+.Brands-Div-footer{
+  flex-direction: row;
+}
+}
